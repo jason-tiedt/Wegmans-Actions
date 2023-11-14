@@ -184,4 +184,3 @@ jobs:
 
 In this lab you have learned to create a reusable workflow and a workflow that consumes it. You also have learned to pass in parameters to the reusable workflow and to use output parameters in the consuming workflow.
 
-You can continue with the [README](../README.md).
