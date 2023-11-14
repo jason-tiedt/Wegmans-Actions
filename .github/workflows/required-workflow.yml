@@ -1,11 +1,12 @@
 name: 04-3. Required Workflow
 on: 
+  workflow_dispatch:
   pull_request:
     branches: [main]
 
 jobs:
   Run-Required-Workflow:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Windows, X64]
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
