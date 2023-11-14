@@ -18,7 +18,7 @@ jobs:
     # We want to test across mutiple OSs, defined by our matrix
     runs-on: ${{ matrix.os }}
     needs: lint
-        strategy:
+    strategy:
       # Cancel all matrix jobs if one of them fails
       fail-fast: true
       matrix:
